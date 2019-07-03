@@ -17061,3 +17061,7 @@ body {
   margin-bottom: 100px;
 }
 
+.simditor-body img {
+  max-width: 100%;
+}
+
