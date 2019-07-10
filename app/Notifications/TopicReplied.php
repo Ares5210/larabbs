@@ -31,7 +31,7 @@ class TopicReplied extends Notification
 
         return [
             'reply_id' => $this->reply->id,
-            'reply_count' => $this->reply->content,
+            'reply_content' => $this->reply->content,
             'user_id' => $this->reply->user_id,
             'user_name' => $this->reply->user->name,
             'user_avatar' => $this->reply->user->avatar,
