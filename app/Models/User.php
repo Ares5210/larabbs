@@ -72,4 +72,9 @@ class User extends Authenticatable implements MustVerifyEmailContract
         $this->save();
         $this->unreadNotifications->markAsRead();
     }
+
+    public function isAuthorOf($model)
+    {
+        return $model->user_id === $this->id;
+    }
 }
